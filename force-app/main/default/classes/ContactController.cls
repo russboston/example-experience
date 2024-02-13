@@ -1,6 +1,6 @@
 public with sharing class ContactController {
 
-    //Comments etc etc
+    //Comments etc etc etc etc
     
     @AuraEnabled(cacheable=true)
     public static List<Contact> getContactList() {
@@ -8,7 +8,7 @@ public with sharing class ContactController {
             SELECT Id, Name, Title, Phone, Email
             FROM Contact
             //WITH SECURITY_ENFORCED
-            LIMIT 10
+            LIMIT 7
         ];
     }
 }
