@@ -5,7 +5,7 @@ public with sharing class ContactController {
         return [
             SELECT Id, Name, Title, Phone, Email
             FROM Contact
-            WITH SECURITY_ENFORCED
+            //WITH SECURITY_ENFORCED
             LIMIT 10
         ];
     }
