@@ -1,6 +1,6 @@
 public with sharing class ContactController {
 
-    //Comments etc etc abc12345
+    //Comments etc etc
     
     @AuraEnabled(cacheable=true)
     public static List<Contact> getContactList() {
