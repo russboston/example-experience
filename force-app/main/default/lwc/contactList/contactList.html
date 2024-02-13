@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="List of Policyholders" icon-name="custom:custom63">
+      <div class="slds-border_bottom"></div>
+        <div class="slds-m-around_medium">
+        <template lwc:if={contacts.data}>
+          <template for:each={contacts.data} for:item="contact">
+            <p key={contact.Id}><b>{contact.Name}</b>, {contact.Phone}</p>
+          </template>
+        </template>
+        <template lwc:elseif={contacts.error}>
+          
+        </template>
+      </div>
+    </lightning-card>
+  </template>
