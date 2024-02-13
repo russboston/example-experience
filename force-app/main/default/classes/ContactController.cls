@@ -2,13 +2,13 @@ public with sharing class ContactController {
 
     //Comments etc etc
     
-    @AuraEnabled
+    @AuraEnabled(cacheable=true)
     public static List<Contact> getContactList() {
         return [
             SELECT Id, Name, Title, Phone, Email
             FROM Contact
             //WITH SECURITY_ENFORCED
-            LIMIT 5
+            LIMIT 10
         ];
     }
 }
