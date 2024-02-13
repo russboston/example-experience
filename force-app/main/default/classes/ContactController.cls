@@ -8,11 +8,7 @@ public with sharing class ContactController {
             SELECT Id, Name, Title, Phone, Email
             FROM Contact
             //WITH SECURITY_ENFORCED
-<<<<<<< HEAD
             LIMIT 10
-=======
-            LIMIT 4
->>>>>>> acad38e (info 5)
         ];
     }
 }
