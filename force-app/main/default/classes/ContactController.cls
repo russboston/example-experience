@@ -2,7 +2,7 @@ public with sharing class ContactController {
 
     //Comments etc etc
     
-    @AuraEnabled(cacheable=true)
+    @AuraEnabled
     public static List<Contact> getContactList() {
         return [
             SELECT Id, Name, Title, Phone, Email
