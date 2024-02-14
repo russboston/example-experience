@@ -7,7 +7,7 @@ public with sharing class ContactController {
         return [
             SELECT Id, Name, Title, Phone, Email
             FROM Contact
-            LIMIT 5
+            LIMIT 6
         ];
     }
 }
